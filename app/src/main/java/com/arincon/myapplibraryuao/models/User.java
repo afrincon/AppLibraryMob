@@ -19,6 +19,8 @@ public class User {
     private String program;
     @JsonProperty("role")
     private String role;
+    @JsonProperty("status")
+    private String status;
 
     public String getId() {
         return id;
@@ -74,5 +76,13 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
