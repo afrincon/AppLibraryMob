@@ -97,38 +97,10 @@ public class MainActivity extends AppCompatActivity {
                     if(status.equals(0)) {
                         Toast.makeText(MainActivity.this, "Usuario deshabilitado comuniquese con la administracion", Toast.LENGTH_LONG).show();
                     } else {
-                        if (role == null) {
-                            Toast.makeText(MainActivity.this, "Rol invalido", Toast.LENGTH_LONG).show();
-                            System.out.println(role);
-                        } else {
-                            System.out.println(role);
-                            if(role.equals("Estudiante")) {
-                                Intent i = new Intent(MainActivity.this, StudentActivity.class);
-                                i.putExtra("id", id);
-                                i.putExtra("name", name);
-                                i.putExtra("last_name", last_name);
-                                i.putExtra("email", email);
-                                i.putExtra("program", program);
-                                i.putExtra("faculty", faculty);
-                                i.putExtra("role", role);
-                                startActivity(i);
-                            } else if (role.equals("Profesor")) {
-                                Intent i = new Intent(MainActivity.this, ProfessorActivity.class);
-                                i.putExtra("id", id);
-                                i.putExtra("name", name);
-                                i.putExtra("last_name", last_name);
-                                i.putExtra("email", email);
-                                i.putExtra("program", program);
-                                i.putExtra("faculty", faculty);
-                                i.putExtra("role", role);
-                                startActivity(i);
-                            }
-                        }
+
                     }
 
                 }
-
-
             }
         }
     }

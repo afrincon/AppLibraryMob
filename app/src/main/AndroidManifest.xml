@@ -14,12 +14,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".StudentActivity"
-            android:theme="@style/AppTheme.Dark" />
-        <activity
-            android:name=".ProfessorActivity"
-            android:theme="@style/AppTheme.Dark" />
-        <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.Dark">
             <intent-filter>
