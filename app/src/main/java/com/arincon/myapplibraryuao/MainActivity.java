@@ -97,7 +97,16 @@ public class MainActivity extends AppCompatActivity {
                     if(status.equals(0)) {
                         Toast.makeText(MainActivity.this, "Usuario deshabilitado comuniquese con la administracion", Toast.LENGTH_LONG).show();
                     } else {
-
+                        Intent i = new Intent(MainActivity.this, MenuActivity.class);
+                        i.putExtra("id", id);
+                        i.putExtra("name", name);
+                        i.putExtra("last_name", last_name);
+                        i.putExtra("email", email);
+                        i.putExtra("program", program);
+                        i.putExtra("faculty", faculty);
+                        i.putExtra("role", role);
+                        i.putExtra("token", token);
+                        startActivity(i);
                     }
 
                 }
