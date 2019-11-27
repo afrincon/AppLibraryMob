@@ -6,6 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".LoanActivity">
 
+    <Button
+        android:id="@+id/btnResByLoan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spResByLoan" />
+
+    <Spinner
+        android:id="@+id/spResByLoan"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etResNameByLoan" />
+
+    <EditText
+        android:id="@+id/etResNameByLoan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates"
+        android:hint="Nombre del recurso"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="0dp"
@@ -38,4 +77,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

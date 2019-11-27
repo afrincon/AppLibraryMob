@@ -130,5 +130,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearchByZone" />
 
+    <Button
+        android:id="@+id/btnLoans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="Prestamos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchByQR" />
+
+    <Button
+        android:id="@+id/btnStatusLoans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="Estado prestamos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoans" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

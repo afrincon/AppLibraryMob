@@ -22,7 +22,7 @@ import okhttp3.Response;
 public class MenuActivity extends AppCompatActivity {
 
     private TextView _tvUserName, _tvEmail, _tvRole;
-    private Button _btnLogout, _btnSearchByZone, _btnSearchByQR;
+    private Button _btnLogout, _btnSearchByZone, _btnSearchByQR, _btnLoans;
 
     User user = new User();
 
@@ -38,6 +38,8 @@ public class MenuActivity extends AppCompatActivity {
         _btnLogout = findViewById(R.id.btnLogout);
         _btnSearchByZone = findViewById(R.id.btnSearchByZone);
         _btnSearchByZone = findViewById(R.id.btnSearchByQR);
+        _btnLoans = findViewById(R.id.btnLoans);
+
 
         final String user_id = getIntent().getStringExtra("id");
         final String name = getIntent().getStringExtra("name") + " " + getIntent().getStringExtra("last_name");
@@ -69,6 +71,20 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MenuActivity.this, ResourceByQRActivity.class);
+                i.putExtra("user_id", user_id);
+                i.putExtra("name", name1);
+                i.putExtra("last_name", last_name);
+                i.putExtra("email", email);
+                i.putExtra("role", role);
+                i.putExtra("token", token);
+                startActivity(i);
+            }
+        });
+
+        _btnLoans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MenuActivity.this, LoanActivity.class);
                 i.putExtra("user_id", user_id);
                 i.putExtra("name", name1);
                 i.putExtra("last_name", last_name);
