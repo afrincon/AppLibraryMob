@@ -13,8 +13,10 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".StatusActivity"></activity>
-        <activity android:name=".LoanActivity" />
-        <activity android:name=".ResourceByQRActivity" />
+        <activity android:name=".LoanActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".ResourceByQRActivity"
+            android:theme="@style/AppTheme.Dark" />
         <activity
             android:name=".RecourceByZoneActivity"
             android:theme="@style/AppTheme.Dark" />

@@ -37,7 +37,7 @@ public class MenuActivity extends AppCompatActivity {
 
         _btnLogout = findViewById(R.id.btnLogout);
         _btnSearchByZone = findViewById(R.id.btnSearchByZone);
-        _btnSearchByZone = findViewById(R.id.btnSearchByQR);
+        _btnSearchByQR = findViewById(R.id.btnSearchByQR);
         _btnLoans = findViewById(R.id.btnLoans);
 
 
@@ -67,7 +67,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        _btnSearchByZone.setOnClickListener(new View.OnClickListener() {
+        _btnSearchByQR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MenuActivity.this, ResourceByQRActivity.class);
